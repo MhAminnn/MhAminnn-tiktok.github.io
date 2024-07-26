@@ -1,10 +1,9 @@
-
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f2f5;
+    overflow-y: auto; /* Ensure vertical scrolling is always enabled */
 }
 
 .info-bar {
@@ -24,7 +23,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items at the top */
-    height: calc(100vh - 50px); /* Adjust height to account for info bar */
+    min-height: 100vh; /* Ensure main takes at least full viewport height */
     padding-top: 60px; /* Ensure space below the info bar */
     box-sizing: border-box;
 }
@@ -36,6 +35,7 @@ main {
     width: 100%;
     max-width: 360px;
     margin-top: 3vh; /* Margin from the top of the viewport */
+    padding-bottom: 60px; /* Ensure space for footer at the bottom */
 }
 
 .col-logo {
@@ -73,6 +73,7 @@ main {
 #downloadForm button:hover {
     background-color: #165eab;
 }
+
 small {
    font-weight: bo;
     width: 100%;
@@ -86,8 +87,9 @@ small {
 }
 
 .video-preview {
-    width: 300px; /* Width of the video preview */
-    height: 250px; /* Height of the video preview */
+    width: 100%; /* Width of the video preview */
+    max-width: 300px; /* Max width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the video covers the specified dimensions without distortion */
     margin-bottom: 10px; /* Space below the video */
 }
