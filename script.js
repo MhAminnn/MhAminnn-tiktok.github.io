@@ -30,12 +30,29 @@ document.addEventListener('DOMContentLoaded', () => {
                         <source src="${data.data.play}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <a href="${data.data.play}" target="_blank" download>
-                        <button type="button">
-                            Download Video
-                        </button>
-                    </a>
+                    <button id="downloadButton" type="button">
+                        Download Video
+                    </button>
                 `;
+
+                const downloadButton = document.getElementById('downloadButton');
+                downloadButton.addEventListener('click', async () => {
+                    try {
+                        const downloadResponse = await axios.get(data.data.play, {
+                            responseType: 'blob'
+                        });
+                        const url = window.URL.createObjectURL(new Blob([downloadResponse.data]));
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.setAttribute('download', 'tiktok_video.mp4');
+                        document.body.appendChild(link);
+                        link.click();
+                        link.parentNode.removeChild(link);
+                    } catch (error) {
+                        console.error('Download error:', error);
+                        result.textContent = 'Terjadi kesalahan saat mengunduh video. Coba lagi.';
+                    }
+                });
             } else {
                 result.textContent = 'Gagal mengunduh video. Coba lagi.';
             }
