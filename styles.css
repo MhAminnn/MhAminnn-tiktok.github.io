@@ -1,0 +1,108 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.info-bar {
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the info bar stays above other content */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    height: calc(100vh - 50px); /* Adjust height to account for info bar */
+    padding-top: 60px; /* Ensure space below the info bar */
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    width: 100%;
+    max-width: 360px;
+    margin-top: 3vh; /* Margin from the top of the viewport */
+}
+
+.col-logo {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+#downloadForm input[type="text"], #downloadForm button {
+    width: 100%; /* Same width for both */
+    padding: 10px; /* Same padding for both */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    font-size: 14px; /* Same font size for both */
+}
+
+#downloadForm button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    font-size: 16px; /* Font size can differ if desired */
+    cursor: pointer;
+}
+
+#downloadForm button:hover {
+    background-color: #165eab;
+}
+small {
+    width: 100%;
+    text-align: center;
+    color: #8d949e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #f0f2f5; /* Optional: background color to ensure readability */
+}
+
+.video-preview {
+    width: 300px; /* Width of the video preview */
+    height: 250px; /* Height of the video preview */
+    object-fit: cover; /* Ensure the video covers the specified dimensions without distortion */
+    margin-bottom: 10px; /* Space below the video */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #165eab;
+}
