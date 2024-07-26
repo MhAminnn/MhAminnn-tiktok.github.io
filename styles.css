@@ -74,6 +74,7 @@ main {
     background-color: #165eab;
 }
 small {
+   font-weight: bo;
     width: 100%;
     text-align: center;
     color: #8d949e;
@@ -81,7 +82,7 @@ small {
     bottom: 0;
     left: 0;
     padding: 10px;
-    background-color: #f0f2f5; /* Optional: background color to ensure readability */
+    background-color: black; /* Optional: background color to ensure readability */
 }
 
 .video-preview {
