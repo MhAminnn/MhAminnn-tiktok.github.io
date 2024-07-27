@@ -10,6 +10,7 @@ body {
     width: 100%;
     background-color: #1877f2;
     color: white;
+    border-radius: 2px;
     text-align: center;
     padding: 10px;
     font-size: 14px;
@@ -57,6 +58,7 @@ main {
     padding: 10px; /* Same padding for both */
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #f0f2f5;
     text-align: center;
     box-sizing: border-box; /* Ensure padding is included in width */
     font-size: 14px; /* Same font size for both */
@@ -78,9 +80,10 @@ small {
    font-weight: bo;
     width: 100%;
     text-align: center;
-    color: #8d949e;
+    color:  #f0f2f5;
     position: fixed;
     bottom: 0;
+    height: auto;
     left: 0;
     padding: 10px;
     background-color: black; /* Optional: background color to ensure readability */
@@ -108,4 +111,46 @@ button {
 
 button:hover {
     background-color: #165eab;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+footer .container {
+  display: inline-block;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .float-right {
+  float: none;
+  display: inline;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  footer .float-right {
+    float: none;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+  }
 }
