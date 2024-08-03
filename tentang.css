@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117; /* Warna latar belakang mode malam GitHub */
+    color: #c9d1d9; /* Warna teks mode malam GitHub */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background: #161b22; /* Warna latar belakang kotak mirip mode malam GitHub */
+    border: 1px solid #30363d; /* Warna border kotak mirip mode malam GitHub */
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: opacity 0.3s, font-weight 0.3s;
+    opacity: 0.6;
+}
+
+.box.visible {
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info a {
+    display: block;
+    color: #58a6ff; /* Warna link mode malam GitHub */
+    text-decoration: none;
+    margin: 5px 0;
+    font-family: 12px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+footer {
+    background-color: #1c1c1c; /* Warna latar belakang gelap untuk footer */
+    padding: 1rem 0.5rem;
+    border-top: 1px solid #333; /* Border footer lebih gelap */
+    text-align: center;
+}
+
+footer .container {
+    display: inline-block;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Warna teks terang */
+}
+
+footer a {
+    color: #1e90ff; /* Warna link terang */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .float-right {
+    float: none;
+    display: inline;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    footer .float-right {
+        float: none;
+        text-align: center;
+        display: block;
+        margin-top: 1rem;
+    }
+}
