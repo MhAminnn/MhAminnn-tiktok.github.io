@@ -1,25 +1,31 @@
+
+
 body {
+  background-image: url('bg.jpg');
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Warna latar belakang gelap */
+    
     color: #e0e0e0; /* Warna teks terang */
     overflow-y: auto; /* Ensure vertical scrolling is always enabled */
 }
 
+
+
+
 .info-bar {
     width: 100%;
-    background-color: #1f1f1f; /* Warna latar belakang gelap untuk info bar */
+    background-image: url("bg1.jpg");
     color: #ffffff; /* Warna teks putih */
     border-radius: 2px;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     font-size: 14px;
     position: fixed; /* Tetap di posisi saat scroll */
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure the info bar stays above other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Menambahkan shadow untuk info bar */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional: Menambahkan shadow untuk info bar */
 }
 
 main {
@@ -128,6 +134,7 @@ footer .container {
     max-width: auto;
     margin: 0 auto;
     padding: 0 1rem;
+    
 }
 
 footer p {
@@ -158,3 +165,4 @@ footer .float-right {
         margin-top: 1rem;
     }
 }
+

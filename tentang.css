@@ -5,29 +5,33 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url("bg.jpg");
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    
 }
 
 .box {
-    background: #161b22; /* Warna latar belakang kotak mirip mode malam GitHub */
-    border: 1px solid #30363d; /* Warna border kotak mirip mode malam GitHub */
+    background: rgba(22, 27, 34, 0.5); /* Warna latar belakang transparan */
+    border: 2px solid rgba(48, 54, 61, 0.5); /* Border dengan transparansi */
     border-radius: 6px;
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     text-align: center;
-    transition: opacity 0.3s, font-weight 0.3s;
-    opacity: 0.6;
+    transition: opacity 0.8s, font-weight 0.3s;
+    opacity: 0.8;
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+    -webkit-backdrop-filter: blur(10px); /* Untuk mendukung Safari */
 }
 
 .box.visible {
     opacity: 1;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .box img {
@@ -56,7 +60,7 @@ body {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
