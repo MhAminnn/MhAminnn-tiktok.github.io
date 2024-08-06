@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
       } else {
-        result.textContent = 'Gagal mengunduh video. Coba lagi.';
+        result.textContent = 'masukin linknya dulu ya deck yaa';
       }
     } catch (error) {
       console.error(error);
