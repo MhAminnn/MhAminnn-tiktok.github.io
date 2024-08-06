@@ -1,168 +1,223 @@
-
-
 body {
-  background-image: url('bg.jpg');
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black; /* Light lavender background */
+    color: #ffffff; /* Text color */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-custom.open {
+    transform: translateY(0);
+}
+.toggle-button {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White icon color */
+    border-radius: 9999px; /* Fully rounded */
+}
+
+.toggle-button:hover {
+  background-color: #382bf0;
+}
+
+/* styles.css */
+.navbar-custom {
+    background-color: black; /* White background for navbar */
+}
+
+.logo {
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer-quote {
+    max-width: 200px; /* Optional: Adjust to fit content */
+    text-align: center;
+    font-style: italic; /* Optional: Style for emphasis */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #1f152e; /* Color on hover */
+}
+
+
+.title-gradient {
+    font-size: 45px; /* Font size for h3 equivalent */
+    font-weight: bold; /* Bold text */
+    color: #48226C;
+    background-image: -webkit-linear-gradient(0deg, #48226C 0%, #8200E7 50%, #BF3EFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-align: center; /* Center text */
+    margin: 0; /* Remove margin for no space between title and subtitle */
+}
+.sub-title {
+    font-size: 2.125rem; /* Font size for bold text */
+    font-weight: bold; /* Bold text */
+    color: #48226C; /* Same color as title gradient */
+    text-align: center; /* Center text */
+    margin-top: -0.25rem; /* Adjust margin to reduce space */
+}
+.description {
+    font-size: 13px; /* Font size for description */
+    color: #000000; /* Black text color */
+    text-align: center; /* Center text */
+    margin-top: 0.5rem; /* Margin to provide space between subtitle and description */
+}
+.title-container {
+    text-align: center; /* Center text */
+    margin-top: 100px; /* Margin to position title below navbar */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left */
+    gap: 8px; /* Space between buttons */
+    margin-top: 2rem; /* Space above buttons */
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    padding: 14px 14px; /* Padding inside buttons */
+    border-radius: 20px; /* Rounded corners */
+    border: none; /* Remove border */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text inside buttons */
+    font-weight: bold; /* Bold text */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Use custom font */
+}
+
+.btn-primary {
+    background-color: #000EEE;
+    margin-left: 20px;
+    color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1f152e;
+}
+
+.btn-secondary {
+    background-color: white;
+    margin-left: 14px;
+    color: #000EEE; /* Secondary button text color */
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+}
+
+
+.kotak {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 50px; /* Adjusted margin-top */
+  margin-bottom: 50px;
+  padding: 20px; /* Add padding */
+  width: 96%; /* Set a width */
+  max-width: 500px; /* Optional: maximum width */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+input[type="url"] {
+    width: 100%; /* Full width of container */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #d1d5db; /* Border color */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+}
+
+button {
+    padding: 12px; /* Padding inside button */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* styles.css */
+html, body {
     margin: 0;
     padding: 0;
-    
-    color: #e0e0e0; /* Warna teks terang */
-    overflow-y: auto; /* Ensure vertical scrolling is always enabled */
-}
-
-
-
-
-.info-bar {
-    width: 100%;
-    background-image: url("bg1.jpg");
-    color: #ffffff; /* Warna teks putih */
-    border-radius: 2px;
-    text-align: center;
-    padding: 12px;
-    font-size: 14px;
-    position: fixed; /* Tetap di posisi saat scroll */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure the info bar stays above other content */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional: Menambahkan shadow untuk info bar */
-}
-
-main {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+.footer {
+    background-color: #ffffff; /* White background */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align items at the top */
-    min-height: 100vh; /* Ensure main takes at least full viewport height */
-    padding-top: 60px; /* Ensure space below the info bar */
-    box-sizing: border-box;
+    align-items: center;
+    padding: 1rem 0; /* Adjust padding as needed */
 }
 
 .container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width */
+    padding: 0 1rem; /* Optional: Adjust horizontal padding */
+}
+
+.social-icons {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    width: 100%;
-    max-width: 360px;
-    margin-top: 3vh; /* Margin from the top of the viewport */
-    padding-bottom: 60px; /* Ensure space for footer at the bottom */
+    gap: 1rem; /* Space between icons */
+    margin-bottom: 1rem; /* Space between icons and credits */
 }
 
-.col-logo {
-    text-align: center;
-    margin-bottom: 20px; /* Space below the logo */
+.social-icon img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: opacity 0.3s;
 }
 
-.form-container {
-    background-color: #1e1e1e; /* Warna latar belakang gelap untuk form */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow lebih gelap */
-    text-align: center;
-    width: 100%;
+.social-icon img:hover {
+    opacity: 0.8; /* Add hover effect */
 }
 
-#downloadForm input[type="text"], #downloadForm button {
-    width: 100%; /* Same width for both */
-    padding: 10px; /* Same padding for both */
-    border: 1px solid #333; /* Border gelap */
-    border-radius: 5px;
-    background-color: #2c2c2c; /* Warna latar belakang gelap untuk input dan button */
-    color: #e0e0e0; /* Warna teks terang */
-    text-align: center;
-    box-sizing: border-box; /* Ensure padding is included in width */
-    font-size: 14px; /* Same font size for both */
+.credit {
+    margin-top: 0; /* Ensure no extra margin at the top */
+    padding: 0; /* Ensure no extra padding */
 }
 
-#downloadForm button {
-    background-color: #1877f2; /* Warna latar belakang biru untuk button */
-    color: #ffffff; /* Warna teks putih */
-    border: none;
-    font-size: 16px; /* Font size */
-    cursor: pointer;
+/* Custom styles for dark mode */
+.dark-mode {
+    background-color: #1a202c; /* Dark background */
+    color: #cbd5e0; /* Light text */
 }
 
-#downloadForm button:hover {
-    background-color: #4caf50; /* Warna latar belakang hijau saat hover */
-} 
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #1877f2; /* Warna latar belakang biru untuk button */
-    color: #ffffff; /* Warna teks putih */
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+.dark-mode .bg-gray-100 {
+    background-color: #2d3748; /* Dark background for body */
 }
 
-button:hover {
-    background-color: #4caf50; /* Warna latar belakang hijau saat hover */
+.dark-mode .btn-primary {
+    background-color: #2b6cb0; /* Darker blue for buttons */
 }
 
-small {
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    color: #e0e0e0; /* Warna teks terang */
-    position: fixed;
-    bottom: 0;
-    height: auto;
-    left: 0;
-    padding: 10px;
-    background-color: #1c1c1c; /* Background untuk memastikan keterbacaan */
-}
-
-.video-preview {
-    width: 100%; /* Width of the video preview */
-    max-width: 300px; /* Max width for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the video covers the specified dimensions without distortion */
-    margin-bottom: 10px; /* Space below the video */
-}
-
-footer {
-    background-color: #1c1c1c; /* Warna latar belakang gelap untuk footer */
-    padding: 1rem 0.5rem;
-    border-top: 1px solid #333; /* Border footer lebih gelap */
-    text-align: center;
-}
-
-footer .container {
-    display: inline-block;
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0 1rem;
-    
-}
-
-footer p {
-    margin-bottom: 0.5rem;
-    color: #e0e0e0; /* Warna teks terang */
-}
-
-footer a {
-    color: #1e90ff; /* Warna link terang */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .float-right {
-    float: none;
-    display: inline;
-    margin: 0 auto;
-}
-
-@media (max-width: 576px) {
-    footer .float-right {
-        float: none;
-        text-align: center;
-        display: block;
-        margin-top: 1rem;
-    }
-}
+/* Additional custom styles can be added here */
 
