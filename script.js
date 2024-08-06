@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
       } else {
-        result.textContent = 'masukin linknya dulu ya deck yaa';
+        result.textContent = 'jangan ya dek yaa, masukin linknya dulu ya deck yaa';
       }
     } catch (error) {
       console.error(error);
