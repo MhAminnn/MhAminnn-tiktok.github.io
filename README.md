@@ -2,4 +2,4 @@
 Download video tiktok anda
 
 Main page
-![Alt text](https://imgur.com/a/8Oa2iBq)
+![Logo](https://imgur.com/a/8Oa2iBq)
