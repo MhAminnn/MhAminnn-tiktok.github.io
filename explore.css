@@ -1,0 +1,120 @@
+body {
+  font-family: 'plus jakarta sans';
+  
+  
+}
+
+.title-gradient {
+  margin-top: 15px;
+  padding-top: 50px;
+  font-size: 40px; /* Font size for h3 equivalent */
+  font-weight: bold; /* Bold text */
+  color: #48226C;
+  background-image: -webkit-linear-gradient(0deg, #48226C 0%, #8200E7 50%, #BF3EFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.dwnld {
+  font-family: 'plus jakarta sans';
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 6px;
+  padding: 5px;
+  font-size: 28px;
+  color: #454545;
+  
+}
+
+.dwnld1 {
+  margin-left: 6px;
+  font-size: 12px;
+  padding: 5px;
+  color: #54616C;
+}
+
+.apa {
+  font-family: 'plus jakarta sans';
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 6px;
+  padding: 5px;
+  font-size: 25px;
+  color: #454545;
+}
+
+.apaan {
+  margin-left: 6px;
+  font-size: 20px;
+  padding: 5px;
+  color: #54616C;
+}
+
+.ini {
+  margin-left: 6px;
+  font-size: 12px;
+  padding: 10px;
+  color: #54616C;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #ffff; /* White background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0; /* Adjust padding as needed */
+    margin-top: auto; /* Pushes footer to the bottom */
+    border-top: 1px solid #ddd; /* Optional: Add a border for separation */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width */
+    padding: 0 1rem; /* Optional: Adjust horizontal padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+    margin-bottom: 0.5rem; /* Adjust if needed */
+}
+
+.social-icon img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.8; /* Add hover effect */
+}
+
+.credit {
+  font-size: 12px;
+  color: #54616C;
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
+}
+

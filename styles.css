@@ -205,19 +205,22 @@ body {
     padding: 0; /* Ensure no extra padding */
 }
 
-/* Custom styles for dark mode */
-.dark-mode {
-    background-color: #1a202c; /* Dark background */
-    color: #cbd5e0; /* Light text */
+
+
+.dwnld {
+  font-family: 'plus jakarta sans';
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 6px;
+  padding: 5px;
+  font-size: 28px;
+  color: #454545;
+  
 }
 
-.dark-mode .bg-gray-100 {
-    background-color: #2d3748; /* Dark background for body */
+.dwnld1 {
+  margin-left: 6px;
+  font-size: 12px;
+  padding: 5px;
+  color: #54616C;
 }
-
-.dark-mode .btn-primary {
-    background-color: #2b6cb0; /* Darker blue for buttons */
-}
-
-/* Additional custom styles can be added here */
-

@@ -95,11 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
       } else {
-        result.textContent = 'jangan ya dek yaa, masukin linknya dulu ya deck yaa';
+        result.textContent = 'Gagal, tidak mendeteksi url.';
       }
     } catch (error) {
       console.error(error);
-      result.textContent = 'Terjadi kesalahan. Coba lagi.';
+      result.textContent = 'Terjadi kesalahan.';
     }
   });
 });
